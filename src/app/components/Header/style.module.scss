@@ -1,0 +1,36 @@
+.header {
+	:global {
+		.nav-list {
+			.list-item {
+				position: relative;
+				display: flex;
+				align-items: center;
+				height: 100%;
+				color: var(--text-gray-color);
+				overflow: hidden;
+				cursor: pointer;
+				transition: all 0.5s ease;
+				&::after {
+					content: "";
+					position: absolute;
+					left: 0;
+					bottom: -4px;
+					height: 10px;
+					width: 0;
+					border-radius: 7px 7px 0 0;
+					opacity: 0;
+					background-color: var(--primary-color);
+					transition: all 0.3s linear;
+				}
+				&.active,
+				&:hover {
+					color: var(--primary-color);
+					&::after {
+						width: 100%;
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}
