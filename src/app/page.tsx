@@ -44,7 +44,7 @@ export default async function Home() {
 					<QRCode />
 				</div>
 				<div className="col-span-3 lg:col-span-2">
-					<div className="bg-white rounded-2xl p-5">
+					<div className="bg-white rounded-2xl p-1 py-5 lg:px-5">
 						<div className="flex justify-between mb-5">
 							<div className="flex gap-3 flex-1">
 								<button className="py-1.5 px-5 border border-orange-400 rounded-2xl text-sm bg-orange-50 text-orange-500 grow lg:grow-0">

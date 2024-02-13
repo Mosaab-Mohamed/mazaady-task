@@ -13,7 +13,7 @@ export type ProductProps = {
 export default function Product(props: ProductProps) {
 	return (
 		<div className="flex gap-2 mb-7 ">
-			<div className="relative overflow-hidden rounded-3xl w-28 lg:w-36 h-28 lg:h-36">
+			<div className="relative overflow-hidden rounded-3xl w-32 lg:w-36 h-28 lg:h-36">
 				<Image src={props.image} alt="product" fill={true} />
 				<div
 					className={`absolute right-0 bottom-0 ${
@@ -45,13 +45,13 @@ export default function Product(props: ProductProps) {
 				<div className="lg:flex items-center gap-2">
 					<p className="text-slate-500 lg:text-sm">Lots Starts in</p>
 					<div className="flex items-center gap-2">
-						<div className="bg-orange-50 rounded-3xl py-2 lg:py-1.5 px-2 lg:px-5 text-orange-400 font-semibold text-xs grow sm:grow-0 text-center sm:text-start">
+						<div className="bg-orange-50 rounded-3xl py-2 lg:py-1.5 px-1 lg:px-5 text-orange-400 font-semibold text-xs lg:text-base grow sm:grow-0 text-center sm:text-start">
 							2 <span className="text-xs">Days</span>
 						</div>
-						<div className="bg-orange-50 rounded-3xl py-2 lg:py-1.5 px-2 lg:px-5 text-orange-400 font-semibold grow sm:grow-0 text-center sm:text-start">
+						<div className="bg-orange-50 rounded-3xl py-2 lg:py-1.5 px-1 lg:px-5 text-orange-400 font-semibold grow text-xs lg:text-base sm:grow-0 text-center sm:text-start">
 							10 <span className="text-xs">Hours</span>
 						</div>
-						<div className="bg-orange-50 rounded-3xl py-2 lg:py-1.5 px-2 lg:px-5 text-orange-400 font-semibold grow sm:grow-0 text-center sm:text-start">
+						<div className="bg-orange-50 rounded-3xl py-2 lg:py-1.5 px-1 lg:px-5 text-orange-400 font-semibold grow text-xs lg:text-base sm:grow-0 text-center sm:text-start">
 							50 <span className="text-xs">Minutes</span>
 						</div>
 					</div>
